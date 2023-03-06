@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 
 import Logo from "../public/assets/AJ_Hero_Logo.svg";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <section className={styles.home_hero_bg}>
+        <div className={styles.home_hero_bg}>
           <video
             playsInLine
             autoPlay
@@ -28,7 +29,42 @@ export default function Home() {
             />
           </video>
           <Image src={Logo} alt="AJ Logo" />
-        </section>
+        </div>
+        <div className={styles.home_grid_wrap}>
+          <section className={styles.home_grid_item}>
+            <Link href="#">
+              <Image
+                src="/assets/Home_Grid_Alex.svg"
+                alt="Alex Jones"
+                width={200}
+                height={200}
+              />
+            </Link>
+            <Link href="#">
+              <h2>Alex Profile</h2>
+            </Link>
+            <p>
+              Alex has been racing competitively since 2013 in Formula Vee and
+              recently in the Mazda MX5’s!
+            </p>
+          </section>
+          <section className={styles.home_grid_item}>
+            <Link href="#">
+              <Image
+                src="/assets/Home_Grid_Mazda.svg"
+                alt="Mazda"
+                width={200}
+                height={200}
+              />
+            </Link>
+            <Link href="#">
+              <h2>Mazda Biography</h2>
+            </Link>
+            <p>
+              The Mazda MX-5 Supercup is one of UK's most competitive series!
+            </p>
+          </section>
+        </div>
       </main>
     </>
   );

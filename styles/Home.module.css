@@ -20,3 +20,32 @@
   top: 0;
   left: 0;
 }
+
+.home_grid_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vw 8vw;
+  gap: 15vw;
+}
+
+.home_grid_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+
+.home_grid_item img {
+  margin: auto;
+}
+
+.home_grid_item h2 {
+  font-size: 37.9px;
+}
+
+.home_grid_item p {
+  padding: 0 4vw;
+}
