@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../public/assets/Logo.svg";
+import Logo from "../public/assets/Nav_Logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSquareFacebook,
@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav>
       <section className="nav-logo">
-        <Image src={Logo} />
+        <Image src={Logo} alt="AJ Logo" />
       </section>
       <section className="nav-links">
         <Link href="#">ALEX</Link>
