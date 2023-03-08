@@ -1,0 +1,102 @@
+/* HERO STYLES */
+
+.about_hero_bg {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.about_hero_bg img {
+    height: 100%;
+    width: 100%;
+}
+
+.about_hero_bg h1 {
+    position: absolute;
+    bottom: 20px;
+    color: var(--primary-white);
+}
+
+/* RACING CV STYLES */
+
+.about_cv_wrap {
+    padding: 80px 7.5vw;
+}
+
+.about_cv_wrap h2 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.about_cv_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.about_cv_text {
+    width: 100%;
+}
+
+.about_cv_text h4 {
+    font-weight: 700;
+    font-family: Druk;
+    font-size: 26px;
+    padding-bottom: 24px;
+}
+
+.about_cv_item img {
+    width: 100%;
+    height: auto;
+    max-height: 440px;
+    margin-left: 11vw;
+}
+
+.about_cv_item:nth-of-type(even) img {
+    order: 1;
+    margin-left: 0;
+    margin-right: 214px;
+}
+
+.about_cv_item:nth-of-type(even) .about_cv_text {
+    order: 2;
+    text-align: right;
+}
+
+/* RACING CV STYLES */
+.about_bio_wrap{
+    padding: 0 16.5vw;
+    padding-bottom: 80px;
+}
+
+.about_bio_wrap h2 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.about_bio_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10vw;
+    padding: 40px 30px;
+    border-top: 1px solid black;
+}
+
+.about_bio_item:last-of-type {
+    border-bottom: 1px solid black;
+}
+
+.about_bio_question {
+    font-family: Druk;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.about_bio_answer {
+    font-size: 26px;
+}

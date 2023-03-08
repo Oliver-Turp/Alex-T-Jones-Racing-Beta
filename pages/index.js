@@ -26,10 +26,7 @@ export default function Home() {
             poster="/assets/Video.Still002.png"
             className={styles.home_hero_vid}
           >
-            <source
-              src="/assets/Alex T Jones Racing_Edit.mp4"
-              type="video/mp4"
-            />
+            <source src="/assets/Alex T Jones Racing.mp4" type="video/mp4" />
           </video>
           <Image src={Logo} alt="AJ Logo" />
         </div>
