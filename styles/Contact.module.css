@@ -1,0 +1,64 @@
+/* HERO STYLES */
+.contact_hero_bg {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact_hero_bg img {
+    height: 100%;
+    width: 100%;
+}
+
+.contact_hero_bg h1 {
+    position: absolute;
+    bottom: 20px;
+    color: var(--primary-white)
+}
+
+/* CONTENT STYLES */
+.contact_form_wrap {
+    padding: 64px 649px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact_form_wrap input,
+.contact_form_wrap textarea {
+    font-size: 16px;
+    font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  padding: 8px 16px;
+  border: 1px solid black;
+}
+
+.contact_form_wrap textarea {
+    resize: vertical;
+    min-height: 162px;
+}
+
+.contact_form_wrap .contact_form_btn {
+    padding: 10px 35px;
+    background-color: var(--primary-red);
+    max-width: 130px;
+    margin: auto;
+    color: var(--primary-white);
+    font-family: Druk;
+    font-weight: 700;
+    border-radius: 6px;
+    border: none;
+}
+
+.contact_form_wrap input:focus,
+.contact_form_wrap textarea:focus {
+border: 1px solid var(--primary-red);
+}
+
+.contact_form_wrap .contact_form_btn:active {
+    scale: 0.9
+}
