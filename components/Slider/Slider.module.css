@@ -1,0 +1,75 @@
+.testimonial_wrap {
+  display: grid;
+  grid-template-rows: 1fr 50px;
+  justify-items: center;
+  row-gap: 1rem;
+  padding: 72px 60px 144px;
+  padding-top: 0;
+}
+
+.quotes-img-right {
+  justify-self: end;
+  background-image: url(../../public/assets/left.png);
+  margin-right: 20px;
+}
+
+.quotes-img-left {
+  background-image: url(../../public/assets/right.png);
+  margin-left: 20px;
+}
+
+.testimonial_wrap_grid {
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.main-quotes-div {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  align-items: center;
+  transition-duration: 1s;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+}
+
+.quotes-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 23px;
+}
+
+.subText {
+  color: #999999;
+}
+
+.myDot {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+  background: var(--primary-red);
+  opacity: 0.4;
+  margin-top: 1rem;
+}
+
+.myDot--active {
+  background: var(--primary-red);
+  opacity: 1;
+}
+
+.not-visible {
+  opacity: 0;
+  transition-duration: 1s;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+}

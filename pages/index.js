@@ -5,6 +5,9 @@ import styles from "@/styles/Home.module.css";
 import Logo from "../public/assets/AJ_Hero_Logo.svg";
 import Link from "next/link";
 
+import Slider from "@/components/Slider/Slider";
+import data from "@/components/Slider/Testimonials.json";
+
 export default function Home() {
   return (
     <>
@@ -65,6 +68,8 @@ export default function Home() {
             </p>
           </section>
         </div>
+        <Slider testimonialData={data} />
+        {/* ADD INSTAGRAM FEED. Need working HTTPS cert to even test it */}
       </main>
     </>
   );
