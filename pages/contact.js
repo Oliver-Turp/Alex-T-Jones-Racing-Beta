@@ -16,11 +16,10 @@ const About = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+      .sendForm({process.env.EMAILJS_SERVICE_ID},
+        {process.env.EMAILJS_TEMPLATE_KEY},
         form.current,
-        "YOUR_PUBLIC_KEY"
+        {process.env.EMAILJS_PUBLIC_KEY}
       )
       .then(
         (result) => {
