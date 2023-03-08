@@ -1,0 +1,57 @@
+/* CONTENT STYLES */
+.mazda_hero_bg {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mazda_hero_bg img {
+    height: 100%;
+    width: 100%;
+}
+
+.mazda_hero_bg h1 {
+    position: absolute;
+    bottom: 20px;
+    color: var(--primary-white)
+}
+
+/* CONTENT STYLES */
+.mazda_content_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 300px;
+    gap: 48px;
+}
+
+.mazda_content_wrap > img {
+    width: 80%;
+    height: auto;
+}
+
+.mazda_content_wrap ul{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    gap: 16px;
+}
+
+.mazda_content_wrap ul li {
+    list-style: disc;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 28.43px;
+}
+
+.mazda_content_images {
+    display: flex;
+    align-items: center;
+    gap: 96px;
+}
